@@ -68,12 +68,15 @@ html {
 
 body {
     font-size: var(--font-size-small);
-    font-family: var(--font-stack);
+    /* font-family: var(--font-stack); */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    /* background: conic-gradient(from 45deg,rebeccapurple,black,blue,black,rebeccapurple,black,blue,black,rebeccapurple); */
-    background:linear-gradient(to right,rebeccapurple,black,blue);
+    background: #000;
+    background: conic-gradient(from 45deg,rebeccapurple,black,blue,black,rebeccapurple,black,blue,black,rebeccapurple);
+    /* background:linear-gradient(to right,rebeccapurple,black,blue); */
     overflow-x: hidden;
 }
 
@@ -85,8 +88,8 @@ body::before {
     right:0;
     bottom:0;
     background:linear-gradient(to right,black,rebeccapurple);
-    -webkit-mask:linear-gradient(#fff,transparent);
-            mask:linear-gradient(#fff,transparent);
+    /* -webkit-mask:linear-gradient(#fff,transparent); */
+            /* mask:linear-gradient(#fff,transparent); */
   }
 
 .row {
@@ -135,8 +138,10 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Jost', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
     line-height: var(--line-height-small);
     color: var(--white);
 }
@@ -236,7 +241,9 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
 }
 
 .btn:focus,
@@ -256,6 +263,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    border-radius: 3px;
 }
 
 .btn:hover::after,
@@ -267,6 +275,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+    text-shadow: 1px 3px 3px #000;
 }
 
 .btn--pink::after {
@@ -277,7 +286,6 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:focus {
     background: transparent;
     color: var(--white);
-    text-shadow: 3px 3px 9px #fff;
 }
 
 .link__text {
@@ -306,6 +314,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover {
     outline: none;
     color: #01344B;
+    box-shadow: 2px 4px 2px #fff;
 }
 
 .link__text:hover::after,
