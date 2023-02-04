@@ -433,6 +433,29 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--pink);
 }
 
+ul.nav__items li:last-child {
+    animation: cta 1500ms ease-in 250ms forwards infinite;
+    border-radius: 10px;
+}
+
+@keyframes cta {
+    0% {
+        text-shadow: 0px 3px 5px #fff;
+    }
+    25% {
+        text-shadow: 3px 0px 5px #fff;
+    }
+    50% {
+        text-shadow: 0px -3px 5px #fff;
+    }
+    75% {
+        text-shadow: -3px 0px 5px #fff;
+    }
+    100% {
+        text-shadow: 0px 3px 5px #fff;
+    }
+}
+
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
