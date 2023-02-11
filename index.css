@@ -501,6 +501,11 @@ ul.nav__items li:last-child {
     font-size: var(--font-size-medium);
 }
 
+.header__text .intro {
+    font-size: var(--font-size-normal);
+    margin: 0 0 2rem;
+}
+
 @media(max-width: 500px) {
     .header {
         text-align: center;
